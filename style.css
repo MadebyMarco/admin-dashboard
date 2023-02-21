@@ -5,10 +5,27 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .sidebar {
-    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    background-color: aqua;
 }
 
+.header {
+    grid-column: 2 / 3 ;
+}
+
+
+.small-profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.main-content {
+    grid-column: 2 / 3;
+}
