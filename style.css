@@ -5,8 +5,9 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 7fr;
     column-gap: 50px;
+    row-gap: 50px;
 }
 
 .sidebar {
@@ -22,6 +23,32 @@
 
 .header {
     grid-column: 2 / 3 ;
+    display: flex;
+    flex-flow: column;
+}
+
+.header-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top-row .right-side, 
+.header-top-row .left-side{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.header-top-row .right-side {
+    padding-right: 50px;
+}
+
+
+.header-bottom-row {
+    display: flex;
+    align-items: center;
 }
 
 .large-profile-picture {
