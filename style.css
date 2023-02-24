@@ -6,7 +6,6 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 7fr;
-    column-gap: 50px;
     row-gap: 50px;
 }
 
@@ -15,40 +14,86 @@
     grid-row: 1 / 3;
     display: grid;
     row-gap: 50px;
-
     padding: 25px;
-    background-color: rgb(41, 147, 196);
+    background-color: rgb(64, 171, 221);
     align-content: flex-start;
 }
 
 .header {
     grid-column: 2 / 3 ;
     display: flex;
+    gap: 20px;
     flex-flow: column;
+    background-color: white;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    z-index: -1;
 }
 
 .header-top-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 100px;
+}
+
+.header-top-row input {
+    outline: none;
+    width: 500px;
+    height: 15px;
+    background-color: rgb(202, 215, 223);
+    border-color: rgba(201, 201, 201, 0);
+    border-radius: 50px;
+    padding: 10px;
+
 }
 
 .header-top-row .right-side, 
 .header-top-row .left-side{
     display: flex;
     align-items: center;
-    gap: 50px;
 }
 
 
 .header-top-row .right-side {
-    padding-right: 50px;
+    gap: 25px;
+    margin-right: 100px;
+    flex-shrink: 0;
 }
 
+.header-top-row .left-side {
+    gap: 25px;
+}
 
 .header-bottom-row {
     display: flex;
     align-items: center;
+    gap: 25px;
+    justify-content: space-between;
+
+}
+
+.header-bottom-row button{
+    padding: 16px 32px;
+    border: 0;
+    border-radius: 50px;
+    background-color: rgb(64, 171, 221);
+    color: white;
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    gap: 25px;
+    margin-right: 100px;
+}
+
+.header-bottom-row .left-side {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
 .large-profile-picture {
@@ -69,6 +114,7 @@
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
 }
 
 .project-cards {
