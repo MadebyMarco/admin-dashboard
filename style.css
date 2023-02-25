@@ -113,18 +113,61 @@
 .main-content {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 50px;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 25px;
+    column-gap: 40px;
 }
+
+.announcement-label {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.announcements {
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;    
+}
+
+.announcement-card:nth-child(2) {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10px 0px;
+}
+
 
 .project-cards {
     grid-column: 1 / 1;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 2fr 2fr;
+    gap: 20px;
 }
 
+.project-card {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border-left-color: gold;
+    border-left-width: 8px;
+    border-left-style: solid;
+}
+
+.project-card .icons {
+    align-self: flex-end;
+    margin-top: 15px;
+}
 
 .main-content-right-side {
     display: grid;
     grid-column: 2 / 2;
+    row-gap: 25px;
 }
 
 .sidebar-item {
@@ -141,9 +184,27 @@
     row-gap: 25px;
 }
 
+.trending {
+    flex-flow: column;
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.trending-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 .trending-card img{
     width: 50px;
     height: 50px;
     border-radius: 50px;
+
 }
+
 
