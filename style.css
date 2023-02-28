@@ -13,10 +13,12 @@
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
-    row-gap: 50px;
-    padding: 25px 50px 25px 25px;
-    background-color: rgb(25 146 212);
+    align-items: center;
     align-content: flex-start;
+    row-gap: 50px;
+    padding: 25px 75px 25px 25px;
+    color: white;
+    background-color: rgb(25 146 212);
 }
 
 .header {
@@ -36,18 +38,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 100px;
 }
 
 .header-top-row input {
     outline: none;
     width: 500px;
-    height: 15px;
+    height: 10px;
     background-color: rgb(202, 215, 223);
     border-color: rgba(201, 201, 201, 0);
     border-radius: 50px;
     padding: 10px;
-
 }
 
 .header-top-row .right-side, 
@@ -59,7 +59,7 @@
 
 .header-top-row .right-side {
     gap: 25px;
-    margin-right: 100px;
+    margin-right: 40px;
     flex-shrink: 0;
 }
 
@@ -87,7 +87,7 @@
 .buttons {
     display: flex;
     gap: 25px;
-    margin-right: 100px;
+    margin-right: 40px;
 }
 
 .header-bottom-row .left-side {
@@ -136,7 +136,7 @@
 .announcements {
     display: flex;
     flex-flow: column;
-    gap: 10px;
+    gap: 15px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     padding: 30px;
     border-radius: 10px;
@@ -144,14 +144,19 @@
     background-color: white;
 }
 
-.announcement-card {
+.announcement-card p{
     font-size: 12px;
+    color: rgb(88, 88, 88);
+}
+
+.announcement-card h4 {
+    font-size: 16px;
 }
 
 .announcement-card:nth-child(2) {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    padding: 10px 0px;
+    padding: 15px 0px;
 }
 
 
@@ -210,6 +215,10 @@
     grid-column: 2 / 2;
     row-gap: 10px;
 }
+#dashboard {
+   column-gap: 10px;
+   margin-left: -10px; 
+}
 
 .sidebar-item {
     color: white;
@@ -217,6 +226,7 @@
     grid-template-columns: 1fr 10fr;
     column-gap: 25px;
     align-items: center;
+    justify-items: start;
 }
 
 .sidebar-group-one,
